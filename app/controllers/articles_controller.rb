@@ -1,5 +1,16 @@
 class ArticlesController < ApplicationController
   include ArticlesHelper
+
+    before_action :authenticated, except: [:show, :index]
+
+    def authenticated
+      unless current_user
+        redirect_to root_path
+        flash.notice = "You should be logged in to complete this action"    
+        return false
+      end
+    end
+    
     def index
         @articles = Article.all
       end
