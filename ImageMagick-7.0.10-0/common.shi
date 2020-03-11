@@ -1,0 +1,27 @@
+# -*- shell-script -*-
+# Copyright 1999-2020 ImageMagick Studio LLC
+# Definitions of optional features and configuration values for this build.
+# Intended for use by test scripts.
+MAGICK_FEATURES='DPC HDRI Cipher OpenMP'
+top_srcdir='/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0'
+top_builddir='/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0'
+
+set -a
+COMPARE="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick compare"
+COMPOSITE="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick composite"
+CONJURE="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick conjure"
+CONVERT="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick convert"
+DISPLAY="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick display"
+IDENTIFY="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick identify"
+MAGICK="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick"
+MONTAGE="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities/magick montage"
+VALIDATE="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/tests/validate"
+DRAWTEST="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/tests/drawtest"
+WANDTEST="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/tests/wandtest"
+LD_LIBRARY_PATH="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/MagickCore/.libs:/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/MagickWand/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/coders"
+MAGICK_CONFIGURE_PATH="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/config:/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/config"
+MAGICK_FILTER_MODULE_PATH="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/filters"
+MAGICK_FONT="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/PerlMagick/demo/Generic.ttf"
+PATH="/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/utilities:/home/sukhrob/odin_on_rails/blogger/ImageMagick-7.0.10-0/tests:${PATH}"
+set +a
